@@ -6,6 +6,7 @@ import Feature3 from './components/Feature3'
 import Search from './components/Search'
 import SearchedForPokemon from './components/SearchedForPokemon'
 import {useState } from 'react'
+import { SpeedInsights } from "@vercel/speed-insights/vite"
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay, EffectCube, Pagination} from 'swiper/modules'
 import 'swiper/css'
@@ -17,6 +18,7 @@ export default function App() {
  
     return (
       <>
+        <SpeedInsights/>
         <Search setData={setData}/>
                 {/* <div id='gallery'>
                     <Feature1/>
