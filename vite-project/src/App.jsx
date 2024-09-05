@@ -11,7 +11,6 @@ import {Autoplay, EffectCube, Pagination} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/effect-cube'
 import 'swiper/css/pagination'
-import { SpeedInsights } from "@vercel/speed-insights"
 export default function App() {
   const [data, setData] = useState('')
  
@@ -55,7 +54,6 @@ export default function App() {
           <Feature3/>
         </SwiperSlide>
       </Swiper>
-       <SpeedInsights/>
       </>
     )
 }
