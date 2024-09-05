@@ -1,2 +1,2 @@
 # curly-fishstick
-vite, react, pokemon
+あいての　こうげきが きゅうしょに　あたらない。
