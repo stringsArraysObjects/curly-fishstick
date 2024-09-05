@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import Feature1 from './components/Feature1'
 import Feature2 from './components/Feature2'
 import Feature3 from './components/Feature3'
@@ -8,9 +7,11 @@ import SearchedForPokemon from './components/SearchedForPokemon'
 import {useState } from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay, EffectCube, Pagination} from 'swiper/modules'
+import './App.css'
 import 'swiper/css'
 import 'swiper/css/effect-cube'
 import 'swiper/css/pagination'
+
 export default function App() {
   const [data, setData] = useState('')
  
