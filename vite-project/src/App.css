@@ -88,21 +88,21 @@ button {
 .item:nth-child(1){
 	/* background: #ff4a4a; */
   background: 
-    radial-gradient(circle at 60% 50%, #ff4a4a  4vmin, #fff0 50vmin 100%), 
-    repeating-conic-gradient(from 0deg at 60% 50%, #ff4a4a 0 6deg, #e6282a 0 12deg);
-}
-
-.item2:nth-child(1){
-  background: 
   radial-gradient(circle at 0% 0%, #b150ac 0 20vmin, #fff0 90vmin 100%), 
   radial-gradient(circle at 100% 100%, #dd65d8 0 10vmin, #fff0 50vmin 100%), 
   repeating-conic-gradient(from 0deg at 100% 100%, #dd65d8 0 1deg, #b150ac80 1.1deg 1.9deg, #dd65d8 2deg),
   repeating-conic-gradient(from 0deg at 100% 100%, #dd65d8 0 6deg, #b150ac 0 12deg);
 }
+
+.item2:nth-child(1){
+  background: 
+    radial-gradient(circle at 60% 50%, #ff4a4a  4vmin, #fff0 50vmin 100%), 
+    repeating-conic-gradient(from 0deg at 60% 50%, #ff4a4a 0 6deg, #e6282a 0 12deg);
+}
 .item3:nth-child(1){
   background: 
-  linear-gradient(180deg, #f7941d 0 10%, #fff0 90% 100%),
-  repeating-linear-gradient(80deg, #f7941d 0 2px, #ffb862 3px 4px, #f7941d 5px);
+  linear-gradient(180deg, rgba(87, 9, 243) 0 10%, #fff0 90% 100%),
+  repeating-linear-gradient(80deg, rgba(87, 9, 243) 0 2px, rgb(128, 67, 250) 3px 4px, rgba(87, 9, 243) 5px);
 }
 .itemSearched:nth-child(1){
   background: 
