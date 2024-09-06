@@ -6,7 +6,7 @@ function Feature1() {
     useEffect(() => {
                 const fetchData = async () => {
                     try {
-                        const response = await fetch ('https://pokeapi.co/api/v2/pokemon/butterfree')
+                        const response = await fetch ('https://pokeapi.co/api/v2/pokemon/furret')
                         const jsonData = await response.json()
                         return jsonData
                         
@@ -19,12 +19,15 @@ function Feature1() {
     },[])
         console.log(data)
         return (
-            <div>     
-                <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
-                    <h3>{data.name}</h3>
-                  {Object.values(data).map((value, index) =>  (
-                        <span key={index}>{value = data?.abilities[index]?.ability.name} </span> 
-                   ))}    
+            <div className="feature1Background"> 
+                <div className="item">
+                    <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
+                        <h3>{data.name}</h3>
+                    {Object.values(data).map((value, index) =>  (
+                            <span key={index}>{value = data?.abilities[index]?.ability.name} </span> 
+                    ))}    
+                    
+                    </div>    
             </div>
         )
     }

@@ -19,12 +19,14 @@ function Feature2() {
     },[])
         console.log(data)
         return (
-            <div>     
-                <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
-                    <h3>{data.name}</h3>
-                  {Object.values(data).map((value, index) =>  (
-                        <span key={index}>{value = data?.abilities[index]?.ability.name} </span> 
-                   ))}    
+            <div> 
+                <div className="item2">
+                    <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
+                        <h3>{data.name}</h3>
+                    {Object.values(data).map((value, index) =>  (
+                            <span key={index}>{value = data?.abilities[index]?.ability.name} </span> 
+                    ))}    
+                    </div>    
             </div>
         )
     }
