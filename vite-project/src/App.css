@@ -10,8 +10,10 @@
 }
 #gallery { 
   display: flex;
+  padding-top: 5%;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 10px;
  
 }
 /* tags */
