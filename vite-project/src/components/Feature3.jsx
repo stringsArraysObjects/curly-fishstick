@@ -16,8 +16,8 @@ function Feature3() {
                 };
          
                 fetchData().then(setData)
+                console.log(data)
     },[])
-        console.log(data)
         return (
             <div>   
                 <div className="item3">

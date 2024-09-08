@@ -6,6 +6,7 @@ import Feature2 from './components/Feature2'
 import Feature3 from './components/Feature3'
 import Search from './components/Search'
 import SearchedForPokemon from './components/SearchedForPokemon'
+import CardFlip from './components/CardFlip'
 
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
      
                <Search setData={setData}/>
                 <div id='gallery'>
-                    <Feature1/>
+                    <CardFlip/>
                     <Feature2/>
                     <Feature3/>
                     <SearchedForPokemon data={data}/>

@@ -22,33 +22,6 @@ body{
   color: aliceblue;
 }
 
-
-/* swiper */
-.swiper{
-  width: 600px;
-  margin-top: 50px;
-  transform-style: preserve-3d;
-  -webkit-box-reflect: below 20px linear-gradient(transparent,  rgba(0, 0, 0, 0.4));
-  
-}
-.swiper-slide{
-    border-radius: 10px;
-    background-position: center;
-  }
-  #slide-one {
-    background-color: rgba(236, 233, 53, 0.884);
-    
-}
-#slide-two {
-  background-color: rgba(87, 9, 243, 0.863);
-}
-#slide-three {
-  background-color: rgba(125, 214, 111, 0.952);
-  background-size: cover;
-}
-#slide-four {
-  background-color: rgba(172, 32, 22, 0.918) ;
-}
 /* Searchbar */
 button, input {
   font: 1em Hind, sans-serif;
@@ -72,7 +45,7 @@ button {
 
 /* end of search-bar */
 /* featureBackground */
-
+/* 
 .item, .item2, .item3, .itemSearched  {
 	width: auto;
 	min-height: 0;
@@ -86,7 +59,7 @@ button {
 }
 .item:hover:before {
   opacity: 0;
-}
+} */
 .item:nth-child(1){
 	/* background: #ff4a4a; */
   background: 
@@ -112,3 +85,30 @@ button {
   repeating-conic-gradient(from 0deg at 60% 50%, rgb(150, 221, 140) 0 6deg, rgba(125, 214, 111) 0 12deg);
 }
 
+/* card-flip */
+.card-container {
+  perspective: 10000px;
+}
+
+.card {
+  position: relative;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  
+}
+.flipped .card {
+  transform: rotateY(180deg);
+}
+
+.front_feature_1 {
+  color:aliceblue;
+}
+
+.back_feature_1 {
+  background-color: #080404;
+  color: aliceblue;
+  justify-content: center;
+  height: 538px;
+  transform:  rotateY(180deg) translateY(-35rem) translateZ(50px);
+  backface-visibility:hidden;
+}
