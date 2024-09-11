@@ -19,15 +19,20 @@ function Feature3() {
                 console.log(data)
     },[])
         return (
-            <div>   
-                <div className="item3">
+            <>
+            <div className="item3">
+                <div className="front_feature_3">
                     <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
-                        <h3>{data.name}</h3>
-                    {Object.values(data).map((value, index) =>  (
-                        <span key={index}>{value = data?.abilities[index]?.ability.name} </span> 
-                        ))}    
-                </div>  
-            </div>
+                    <h1>{data.name}</h1>
+                </div>
+            </div>  
+            <div className="back_feature_3">
+                <h3>abilities: </h3>
+                {Object.values(data).map((value, index) =>  (
+                    <li key={index}>{value = data?.abilities[index]?.ability.name}</li>
+                ))}    
+            </div>  
+        </>
         )
     }
     

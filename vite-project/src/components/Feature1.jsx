@@ -27,10 +27,9 @@ function Feature1() {
                     </div>  
                  </div> 
                  <div className="back_feature_1">
-                        {Object.values(data).map((value, index) =>  (
-                      
-                                <span key={index}>{value = data?.abilities[index]?.ability.name}</span> 
-                            
+                    <h3>abilities: </h3>
+                        {Object.values(data).map((value, index) =>  ( 
+                                <li key={index}>{value = data?.abilities[index]?.ability.name}</li> 
                         ))}    
                  </div>  
             
