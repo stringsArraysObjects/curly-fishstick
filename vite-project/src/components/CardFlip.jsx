@@ -16,8 +16,10 @@ export default function CardFlip() {
    
 
     return (
-        <>
+        <>   
             <Search setData={setData}/>
+        <div id="gallery">
+
             <div className={`card-container ${isFlipped ? 'flipped' : ''}`}>
                 <div className="card" onMouseEnter={ e => handleMouseEnter()}>
                     <Feature1/>
@@ -38,6 +40,7 @@ export default function CardFlip() {
                     <SearchedForPokemon data={data}/>
                 </div>
             </div>
+        </div>
         </>
     )
 }

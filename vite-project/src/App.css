@@ -10,10 +10,10 @@
 }
 #gallery { 
   display: flex;
-  padding-top: 5%;
+  padding-top: 2%;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 20px;
 }
 
 /* tags */
@@ -45,7 +45,10 @@ button {
 .search-bar {
   display: flex;
 }
-
+.form {
+  width: 250px;
+  height: 35px;
+}
 .search-bar input:focus,
 .search-bar input:valid {
   background: transparent;
@@ -56,6 +59,7 @@ button {
 }
 
 /* end of search-bar */
+
 /* featureBackground */
 
 .item:nth-child(1){

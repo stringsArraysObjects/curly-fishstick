@@ -6,9 +6,9 @@ import CardFlip from './components/CardFlip'
 export default function App() {
     return (
       <>
-                <div id='gallery'>
+               
                     <CardFlip/>
-                </div>
+               
       </>
     )
 }

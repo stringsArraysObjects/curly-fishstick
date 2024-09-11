@@ -31,7 +31,7 @@ export default function Search({setData}) {
  
    
     return(
-        <div>
+        <div className='form'>
             <form  className="search-bar"  onSubmit={handleSubmit}>
                 <input 
                     id="search-input" 
@@ -44,8 +44,11 @@ export default function Search({setData}) {
                 <button type="submit" >
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-solid" size='xl'/>
                 </button>
+                    
             </form>  
-         </div>
+        </div>
+        
+         
     )
 }
 
