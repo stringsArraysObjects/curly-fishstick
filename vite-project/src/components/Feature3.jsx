@@ -22,8 +22,8 @@ function Feature3() {
             <>
             <div className="item3">
                 <div className="front_feature_3">
-                    <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
                     <h1>{data.name}</h1>
+                    <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
                 </div>
             </div>  
             <div className="back_feature_3">

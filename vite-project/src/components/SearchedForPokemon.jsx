@@ -2,13 +2,13 @@ import React from "react";
 
 const SearchedForPokemon = ({data}) => {
     console.log(data)
-    
+
     return (
         <>
         <div className="itemSearched">
             <div className="front_searched_poke">
-                <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
                 <h1>{data.name}</h1>
+                <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
             </div>
         </div>  
         <div className="back_searched_poke">

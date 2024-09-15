@@ -21,9 +21,9 @@ function Feature1() {
         return (
             <>
                  <div className="item">
+                    <h1>{data.name}</h1>
                     <div className="front_feature_1" >
                         <img src={data?.sprites?.other['official-artwork']?.front_default }/>  
-                            <h1>{data.name}</h1>
                     </div>  
                  </div> 
                  <div className="back_feature_1">
