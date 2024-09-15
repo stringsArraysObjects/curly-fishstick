@@ -8,8 +8,6 @@ export default function Search({setData}) {
     
   function handleSubmit(e){
         e.preventDefault()
-      
-        // const params = new URLSearchParams(Object.entries(formData)).toString();
         const apiUrl = `https://pokeapi.co/api/v2/pokemon/${formData}`
       
         console.log(formData)

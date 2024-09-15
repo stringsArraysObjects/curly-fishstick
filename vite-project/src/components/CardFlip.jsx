@@ -12,35 +12,26 @@ export default function CardFlip() {
     
     const handleMouseEnter = () => {
         setIsFlipped(!isFlipped);
-      };
+    };
    
-
+   
     return (
         <>   
             <Search setData={setData}/>
-        <div id="gallery">
-
-            <div className={`card-container ${isFlipped ? 'flipped' : ''}`}>
-                <div className="card" onMouseEnter={ e => handleMouseEnter()}>
+            <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onMouseEnter= { () => { handleMouseEnter()}}>
+                <div className="card" >
                     <Feature1/>
                 </div>
-            </div>
-            <div className={`card-container ${isFlipped ? 'flipped' : ''}`}>
-                <div className="card" onMouseEnter={ e => handleMouseEnter()}>
+                <div className="card" >
                     <Feature2/>
                 </div>
-            </div>
-            <div className={`card-container ${isFlipped ? 'flipped' : ''}`}>
-                <div className="card" onMouseEnter={ e => handleMouseEnter()}>
+                <div className="card">
                     <Feature3/>
                 </div>
-            </div>
-            <div className={`card-container ${isFlipped ? 'flipped' : ''}`}>
-                <div className="card" onMouseEnter={ e => handleMouseEnter()}>
+                <div className="card">
                     <SearchedForPokemon data={data}/>
                 </div>
             </div>
-        </div>
         </>
     )
 }

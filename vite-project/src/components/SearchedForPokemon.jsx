@@ -3,8 +3,6 @@ import React from "react";
 const SearchedForPokemon = ({data}) => {
     console.log(data)
     
-let output = []
-
     return (
         <>
         <div className="itemSearched">
@@ -14,7 +12,6 @@ let output = []
             </div>
         </div>  
         <div className="back_searched_poke">
-            
             {Object.values(data).map((value, index) =>  (
                 <li key={index}>{value = data?.abilities[index]?.ability.name}</li>
             ))}    
