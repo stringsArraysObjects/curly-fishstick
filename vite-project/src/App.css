@@ -105,7 +105,9 @@ button {
   position: relative;
   transition: 0.8s;
   transform-style: preserve-3d;
+  width: 465px;
   height: 538px;
+  align-content: center;
 }
 .flipped .card {
   transform: rotateY(180deg);
@@ -119,6 +121,7 @@ button {
   background-color: #080404;
   color: aliceblue;
   justify-content: center;
+  width: 465px;
   height: 538px;
   transform:  rotateY(180deg) translateY(-35rem) translateZ(50px);
   backface-visibility:hidden;

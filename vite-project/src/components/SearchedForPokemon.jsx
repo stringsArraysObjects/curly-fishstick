@@ -12,6 +12,7 @@ const SearchedForPokemon = ({data}) => {
             </div>
         </div>  
         <div className="back_searched_poke">
+            <h3></h3>
             {Object.values(data).map((value, index) =>  (
                 <li key={index}>{value = data?.abilities[index]?.ability.name}</li>
             ))}    
