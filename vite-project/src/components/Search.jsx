@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 export default function Search({setData}) {
   const [formData, setFormData] = useState('')
+  const [abilities, setHeader] = useState(' ')
   
     
   function handleSubmit(e){
@@ -12,6 +13,7 @@ export default function Search({setData}) {
       
         console.log(formData)
        fetchData(apiUrl).then(setData)
+       
     }
     
     const fetchData = async (apiUrl) => {
@@ -42,7 +44,6 @@ export default function Search({setData}) {
                 <button type="submit" >
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-solid" size='xl'/>
                 </button>
-                    
             </form>  
         </div>
         
