@@ -23,7 +23,7 @@ function Feature2() {
                 <div className="item2">
                     <div className="front_feature_2">
                         <h1>{data.name}</h1>
-                        <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
+                        <img src={data?.sprites?.other['official-artwork']?.front_default} width={350}/>  
                     </div>
                 </div>  
                 <div className="back_feature_2">

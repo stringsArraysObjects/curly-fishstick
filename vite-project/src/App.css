@@ -97,16 +97,15 @@ button {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
-  perspective: 10000px;
-  height: 538px;
+  perspective: 20000px;
+  /* height: 354px; */
 }
 
 .card {
   position: relative;
   transition: 0.8s;
   transform-style: preserve-3d;
-  /* width: 465px; */
-  height: 538px;
+  height: 412px; 
   align-content: center;
 }
 .flipped .card {
@@ -114,16 +113,17 @@ button {
 }
 
 .front_feature_1, .front_feature_2, .front_feature_3, .front_searched_poke {
+  /* width: 400px; */
   color:aliceblue;
 }
 
 .back_feature_1, .back_feature_2, .back_feature_3, .back_searched_poke {
-  background-color: #080404;
-  color: aliceblue;
+  background-color: silver;
+  color: black;
   justify-content: center;
-  /* width: 465px; */
-  height: 538px;
-  transform:  rotateY(180deg) translateY(-35rem) translateZ(50px);
+  /* width: 400px; */
+  height: 415px; 
+  transform:  rotateY(180deg) translateY(-27rem) translateZ(50px);
   backface-visibility:hidden;
   border-radius: 5%;
 }
