@@ -8,7 +8,7 @@ const SearchedForPokemon = ({data}) => {
         <div className="itemSearched">
             <div className="front_searched_poke">
                 <h1>{data.name}</h1>
-                <img src={data?.sprites?.other['official-artwork']?.front_default}/>  
+                <img src={data?.sprites?.other['official-artwork']?.front_default} width={350}/>  
             </div>
         </div>  
         <div className="back_searched_poke">
