@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export default function Search({setData}) {
   const [formData, setFormData] = useState('')
-  const [abilities, setHeader] = useState(' ')
+  
   
     
   function handleSubmit(e){

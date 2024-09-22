@@ -18,7 +18,7 @@ export default function CardFlip() {
     return (
         <>   
             <Search setData={setData}/>
-            <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onMouseEnter= { () => { handleMouseEnter()}}>
+            <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onMouseEnter={handleMouseEnter}>
                 <div className="card" >
                     <Feature1/>
                 </div>

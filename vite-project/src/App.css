@@ -73,9 +73,10 @@ button {
 
 .item2:nth-child(1){
   background: 
-    radial-gradient(circle at 60% 50%, #ff4a4a  4vmin, #fff0 50vmin 100%), 
-    repeating-conic-gradient(from 0deg at 60% 50%, #ff4a4a 0 6deg, #e6282a 0 12deg);
-    border-radius: 5%;
+  radial-gradient(circle at 60% 50%, #ff4a4a  4vmin, #fff0 50vmin 100%), 
+  repeating-conic-gradient(from 0deg at 60% 50%, #ff4a4a 0 6deg, #e6282a 0 12deg);
+  /* border: 10px solid silver; */
+  border-radius: 5%;
 }
 .item3:nth-child(1){
   background: 
