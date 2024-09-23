@@ -32,16 +32,16 @@ export default function Search({setData}) {
    
     return(
         <div className='form'>
-            <form  className="search-bar"  onSubmit={handleSubmit}>
+            <form  className="search-bar" onSubmit={handleSubmit}>
                 <input 
                     id="search-input" 
                     type="search" 
                     name="query"
-                    onChange={e => setFormData(e.target.value)}
                     value={formData}
+                    onChange={e => setFormData(e.target.value)}
                     placeholder='search'
                     />
-                <button type="submit" >
+                <button type="submit">
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-solid" size='xl'/>
                 </button>
             </form>  

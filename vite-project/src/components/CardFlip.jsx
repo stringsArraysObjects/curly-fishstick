@@ -7,20 +7,17 @@ import SearchedForPokemon from "./SearchedForPokemon";
 
 export default function CardFlip() {
     const [isFlipped, setIsFlipped] = useState(false);
-    const [data, setData] = useState('')
+    // const [data, setData] = useState('')
+    // const [isActive, setIsActive] = useState(false);
+  
+  
 
-    
-    const handleMouseEnter = () => {
-        setIsFlipped(!isFlipped);
-    };
-   
-   
     return (
         <>   
-            <Search setData={setData}/>
-            <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onMouseEnter={handleMouseEnter}>
-                <div className="card" >
-                    <Feature1/>
+            {/* <Search setData={setData} onClick={e => { e.stopPropagation(); setIsActive(true)}}/> */}
+            <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onMouseEnter={() =>setIsFlipped(!isFlipped) }>
+                <div className="card">
+                   <Feature1/>
                 </div>
                 <div className="card" >
                     <Feature2/>
@@ -28,9 +25,14 @@ export default function CardFlip() {
                 <div className="card">
                     <Feature3/>
                 </div>
+                {/* {isActive ? (
+
                 <div className="card">
                     <SearchedForPokemon data={data}/>
                 </div>
+
+                ) : (<div></div>)
+                } */}
             </div>
         </>
     )
