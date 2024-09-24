@@ -6,7 +6,7 @@ function Feature1() {
     useEffect(() => {
                 const fetchData = async () => {
                     try {
-                        const response = await fetch ('https://pokeapi.co/api/v2/pokemon/magcargo')
+                        const response = await fetch ('https://pokeapi.co/api/v2/pokemon/furret')
                         const jsonData = await response.json()
                         return jsonData
                         

@@ -19,7 +19,7 @@
 /* tags */
 
 body{
-  background-image: url('/images/2.png');
+  background-image: url('/images/panelDoorBackgroundResized1000.png');
   color: aliceblue;
 }
 
@@ -40,9 +40,10 @@ span {
 button, input {
   font: 1em Hind, sans-serif;
   line-height: 1.0em;
+  border-color: transparent;
 }
 button {
-  background-color: rgba(172, 32, 22, 0.747);
+  background-color: transparent;
 }
 .search-bar {
   display: flex;
@@ -55,8 +56,8 @@ button {
 .search-bar input:valid {
   background: transparent;
   color:aliceblue;
-  border-radius: 0.375em 0 0 0.375em;
-  box-shadow: 0 0 0 0.1em #080404 inset;
+  border-radius: 0.375em;
+  box-shadow: 0 0 0 0.1em ;
   transform: scale(1);
 }
 
@@ -70,6 +71,7 @@ button {
   radial-gradient(circle at 100% 100%, #dd65d8 0 10vmin, #fff0 50vmin 100%), 
   repeating-conic-gradient(from 0deg at 100% 100%, #dd65d8 0 1deg, #b150ac80 1.1deg 1.9deg, #dd65d8 2deg),
   repeating-conic-gradient(from 0deg at 100% 100%, #dd65d8 0 6deg, #b150ac 0 12deg);
+  box-shadow:  8px 8px 8px rgb(116, 110, 110);
   border-radius: 5%;
 }
 
@@ -78,18 +80,21 @@ button {
   radial-gradient(circle at 60% 50%, #ff4a4a  4vmin, #fff0 50vmin 100%), 
   repeating-conic-gradient(from 0deg at 60% 50%, #ff4a4a 0 6deg, #e6282a 0 12deg);
   /* border: 10px solid silver; */
+  box-shadow:  8px 8px 8px rgb(116, 110, 110);
   border-radius: 5%;
 }
 .item3:nth-child(1){
   background: 
   linear-gradient(180deg, rgba(87, 9, 243) 0 10%, #fff0 90% 100%),
   repeating-linear-gradient(80deg, rgba(87, 9, 243) 0 2px, rgb(128, 67, 250) 3px 4px, rgba(87, 9, 243) 5px);
+  box-shadow:  8px 8px 8px rgb(116, 110, 110);
   border-radius: 5%;
 }
 .itemSearched:nth-child(1){
   background: 
   radial-gradient(circle at 60% 50%, rgb(150, 221, 140)  4vmin, #fff0 50vmin 100%), 
   repeating-conic-gradient(from 0deg at 60% 50%, rgb(150, 221, 140) 0 6deg, rgba(125, 214, 111) 0 12deg);
+  box-shadow:  8px 8px 8px rgb(116, 110, 110);
   border-radius: 5%;
 }
 
