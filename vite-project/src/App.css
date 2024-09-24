@@ -33,7 +33,9 @@ h3{
   padding: 2% 0% 0% 2%;
   text-align: left;
 }
-
+span {
+  text-align:left;
+}
 /* Searchbar */
 button, input {
   font: 1em Hind, sans-serif;

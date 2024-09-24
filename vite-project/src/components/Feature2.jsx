@@ -30,7 +30,9 @@ function Feature2() {
                     <h3>abilities: </h3>
                     {Object.values(data).map((value, index) =>  (
                         <li key={index}>{value = data?.abilities[index]?.ability.name}</li>
-                    ))}    
+                    ))}
+                    <h4>weight:</h4>
+                    <span>{data.weight}</span>    
                 </div>  
             </>
         )

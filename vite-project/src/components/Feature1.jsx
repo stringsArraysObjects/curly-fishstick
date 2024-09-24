@@ -30,7 +30,9 @@ function Feature1() {
                     <h3>abilities: </h3>
                         {Object.values(data).map((value, index) =>  ( 
                                 <li key={index}>{value = data?.abilities[index]?.ability.name}</li> 
-                        ))}    
+                        ))}
+                        <h4>weight:</h4>
+                        <span>{data.weight}</span>      
                  </div>  
             
             </>
@@ -40,46 +42,3 @@ function Feature1() {
 export default Feature1
 
 
-// form = document.querySelector('form')
-    
-//     addEventListener('submit', function(e){
-//       e.preventDefault();
-//       var elements = this.elements
-//       var search = form.elements.search.value.toLowerCase()
-//       document.querySelector('#inputAbilitiesPara').innerText = ' '
-//       document.querySelector('#inputTypesPara').innerText = ' '
-//       const urlSearch = `https://pokeapi.co/api/v2/pokemon/${search}`
-//       getSearchData(urlSearch)
-//     })
-//     async function getSearchData (urlSearch){
-
-//         try {
-//             const response = await fetch(urlSearch);
-//             if (!response.ok) {
-//               throw new Error(`Response status: ${response.status}`);
-//             }
-//         const data = await response.json();
-//         document.querySelector('#inputPic').src = data.sprites.other['official-artwork'].front_default    
-//         document.querySelector('#inputName').innerText = data.name
-//         document.querySelector('#inputAbilitiesHeader').innerText = 'abilities:'
-//         document.querySelector('#inputTypesHeader').innerText = 'types:'
-        
-        
-//         for(let i = 0; i < data.abilities.length; i++){
-//             data.abilities.length === 1? 
-//             document.querySelector('#inputAbilitiesPara').innerHTML += data.abilities[i].ability['name'] :
-//             document.querySelector('#inputAbilitiesPara').innerHTML += data.abilities[i].ability['name']+' '
-//         }
-        
-//         for(let i = 0; i < data.types.length; i++){
-//             data.types.length === 1? 
-//             document.querySelector('#inputTypesPara').innerHTML += data.types[i].type['name'] :
-//             document.querySelector('#inputTypesPara').innerHTML += data.types[i].type['name']+' '
-//         }
-        
-        
-//         console.log(data);
-//     } catch (error) {
-//         console.error(error.message);
-//     }
-// }  
