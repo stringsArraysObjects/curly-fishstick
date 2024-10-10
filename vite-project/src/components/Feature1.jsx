@@ -20,20 +20,24 @@ function Feature1() {
     },[])
         return (
             <>
-                 <div className="item">
+                <div className="item">
                     <h1>{data.name}</h1>
                     <div className="front_feature_1" >
                         <img src={data?.sprites?.other['official-artwork']?.front_default } width={350}/>  
                     </div>  
-                 </div> 
-                 <div className="back_feature_1">
+                </div> 
+                <div className="back_feature_1">
+                    <h2>{data.name}</h2>
+                    <h4>weight <i>{data.weight}</i></h4>
                     <h3>abilities: </h3>
-                        {Object.values(data).map((value, index) =>  ( 
+                       <p>{Object.values(data).map((value, index) =>  ( 
                                 <li key={index}>{value = data?.abilities[index]?.ability.name}</li> 
-                        ))}
-                        <h4>weight:</h4>
-                        <span>{data.weight}</span>      
-                 </div>  
+                        ))}</p>
+                    <h3>types:</h3> 
+                      <p>{Object.values(data).map((value, index) =>  ( 
+                                <li key={index}>{value = data?.types[index]?.type?.name}</li> 
+                        ))}</p>     
+                </div>  
             
             </>
         )
