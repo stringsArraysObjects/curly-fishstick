@@ -14,7 +14,7 @@ export default function CardFlip() {
     return (
         <>   
             <Search setData={setData} setIsActive={setIsActive}/>
-            <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onMouseEnter={() =>setIsFlipped(!isFlipped) }>
+            <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onMouseEnter={() =>setIsFlipped(!isFlipped)} ontouchend={() =>setIsFlipped(!isFlipped)}>
                 <div className="card">
                    <Feature1/>
                 </div>
