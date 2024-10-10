@@ -87,7 +87,6 @@ button {
   background: 
   radial-gradient(circle at 60% 50%, #ff4a4a  4vmin, #fff0 50vmin 100%), 
   repeating-conic-gradient(from 0deg at 60% 50%, #ff4a4a 0 6deg, #e6282a 0 12deg);
-  /* border: 10px solid silver; */
   box-shadow:  8px 8px 8px rgb(116, 110, 110);
   border-radius: 5%;
 }
@@ -144,5 +143,11 @@ button {
   border-radius: 5%;
 }
 
+@media (max-width: 480px){
+
+  .card{
+    width: 325px;
+  }
+}
 
 
